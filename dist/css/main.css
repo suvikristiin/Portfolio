@@ -5,22 +5,22 @@ body {
   background: #efe9e9;
   color: #885d5d;
   height: 100%;
-  margin: 0;
+  margin: 0rem;
   font-family: "Lucida Sans","Lucida Sans Regular","Lucida Grande","Lucida Sans Unicode",Geneva,Verdana,sans-serif;
   line-height: 1; }
 
 h1, h2, h3 {
-  margin: 0px;
-  padding: 0px; }
+  margin: 0rem;
+  padding: 0rem; }
 
 h1.heading1, h2.heading1, h3.heading1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 1000;
   padding-left: 6rem;
   color: #000; }
 
 h1.heading2, h2.heading2, h3.heading2 {
-  font-size: 50px;
+  font-size: 3rem;
   padding-left: 8rem;
   font-weight: 600;
   line-height: 5rem;
@@ -28,7 +28,7 @@ h1.heading2, h2.heading2, h3.heading2 {
 
 h1.heading3, h2.heading3, h3.heading3 {
   color: #c19191;
-  font-size: 30px;
+  font-size: 2rem;
   padding-left: 6rem;
   font-weight: 100; }
 
@@ -52,3 +52,13 @@ main .icons {
 
 main .icons a {
   padding: .5rem; }
+
+main .icons a:hover {
+  color: #885d5d;
+  transition: all 1s ease-out; }
+
+main#home {
+  overflow: hidden; }
+
+main#home h3 {
+  margin-top: 15vh; }

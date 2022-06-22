@@ -4,28 +4,32 @@ $primary-color: #EFE9E9;
     box-sizing: border-box;
 }
 
+@mixin easeOut {
+    transition: all 1s ease-out;
+}
+
 body {
     background: $primary-color;
     color: #885D5D;
     height: 100%;
-    margin: 0;
+    margin: 0rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1;
 }
 
 h1, h2, h3 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     
     &.heading1 {
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 1000;
         padding-left: 6rem;
         color: #000;
     }
 
     &.heading2 {
-        font-size: 50px;
+        font-size: 3rem;
         padding-left: 8rem;
         font-weight: 600;
         line-height: 5rem;
@@ -34,7 +38,7 @@ h1, h2, h3 {
 
     &.heading3 {
         color: #C19191;
-        font-size: 30px;
+        font-size: 2rem;
         padding-left: 6rem;
         font-weight: 100;
     }
@@ -62,6 +66,18 @@ main {
 
         a {
             padding: 0.5rem;
+            
+            &:hover {
+                color: #885D5D;
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home {
+        overflow: hidden;
+        h3 {
+            margin-top: 15vh;
         }
     }
 }
