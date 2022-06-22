@@ -2,35 +2,37 @@
   box-sizing: border-box; }
 
 body {
-  background: #efe9e9;
-  color: #885d5d;
+  background: #EFE9E9;
+  color: #885D5D;
   height: 100%;
   margin: 0rem;
-  font-family: "Lucida Sans","Lucida Sans Regular","Lucida Grande","Lucida Sans Unicode",Geneva,Verdana,sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1; }
+  body#bg-img {
+    background: url(../img/background.jpeg);
+    background-attachment: fixed;
+    background-size: 500px 450px;
+    background-repeat: no-repeat; }
 
 h1, h2, h3 {
   margin: 0rem;
   padding: 0rem; }
-
-h1.heading1, h2.heading1, h3.heading1 {
-  font-size: 5rem;
-  font-weight: 1000;
-  padding-left: 6rem;
-  color: #000; }
-
-h1.heading2, h2.heading2, h3.heading2 {
-  font-size: 3rem;
-  padding-left: 8rem;
-  font-weight: 600;
-  line-height: 5rem;
-  margin-bottom: 3rem; }
-
-h1.heading3, h2.heading3, h3.heading3 {
-  color: #c19191;
-  font-size: 2rem;
-  padding-left: 6rem;
-  font-weight: 100; }
+  h1.heading1, h2.heading1, h3.heading1 {
+    font-size: 5rem;
+    font-weight: 1000;
+    padding-left: 6rem;
+    color: #000; }
+  h1.heading2, h2.heading2, h3.heading2 {
+    font-size: 3rem;
+    padding-left: 8rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 3rem; }
+  h1.heading3, h2.heading3, h3.heading3 {
+    color: #C19191;
+    font-size: 2rem;
+    padding-left: 6rem;
+    font-weight: 100; }
 
 a {
   color: #000;
@@ -45,20 +47,15 @@ header {
 main {
   padding: 4rem;
   height: 100%; }
-
-main .icons {
-  margin-top: 5rem;
-  margin-left: 6rem; }
-
-main .icons a {
-  padding: .5rem; }
-
-main .icons a:hover {
-  color: #885d5d;
-  transition: all 1s ease-out; }
-
-main#home {
-  overflow: hidden; }
-
-main#home h3 {
-  margin-top: 15vh; }
+  main .icons {
+    margin-top: 5rem;
+    margin-left: 6rem; }
+    main .icons a {
+      padding: 0.5rem; }
+      main .icons a:hover {
+        color: #885D5D;
+        transition: all 1s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h3 {
+      margin-top: 15vh; }

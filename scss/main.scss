@@ -1,4 +1,6 @@
 $primary-color: #EFE9E9;
+$show-home-image: true;
+$home-image: url(../img/background.jpeg);
 
 * {
     box-sizing: border-box;
@@ -8,7 +10,20 @@ $primary-color: #EFE9E9;
     transition: all 1s ease-out;
 }
 
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: 500px 450px;
+            background-repeat: no-repeat;
+        
+        }
+    }
+}
+
 body {
+    @include background();
     background: $primary-color;
     color: #885D5D;
     height: 100%;
