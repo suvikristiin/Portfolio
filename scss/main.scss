@@ -18,9 +18,12 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1;
 
-    .home-image img {
-        width: 500px;
-    }
+    
+}
+
+img {
+    max-width: 500px;
+    float: right;
 }
 
 
