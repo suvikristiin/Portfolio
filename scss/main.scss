@@ -1,6 +1,4 @@
 $primary-color: #EFE9E9;
-$show-home-image: true;
-$home-image: url(../img/background.jpeg);
 
 * {
     box-sizing: border-box;
@@ -10,27 +8,22 @@ $home-image: url(../img/background.jpeg);
     transition: all 1s ease-out;
 }
 
-@mixin background {
-    @if $show-home-image {
-        &#bg-img {
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: 500px 450px;
-            background-repeat: no-repeat;
-        
-        }
-    }
-}
+
 
 body {
-    @include background();
     background: $primary-color;
     color: #885D5D;
     height: 100%;
     margin: 0rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1;
+
+    .home-image img {
+        width: 500px;
+    }
 }
+
+
 
 h1, h2, h3 {
     margin: 0rem;
